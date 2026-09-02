@@ -11,7 +11,7 @@
     <title>Christopher Loumeau — Cloud Infrastructure Engineer</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/styles.css" />
-    <link rel="stylesheet" href="/mobile.css" />
+    <link rel="stylesheet" href="/mobile.css?v=5" />
     <script defer src="/script.js"></script>
   </head>
   <body>
@@ -41,35 +41,34 @@
 
     <main id="main">
       <section class="hero noise" id="top">
-        <div class="hero-grid shell">
-          <div class="hero-copy reveal">
+        <div class="hero-layout shell">
+          <div class="hero-title reveal">
             <p class="eyebrow"><span class="status-dot"></span> New York · Building worldwide</p>
-            <h1>I build production<br /><em>platforms at scale.</em></h1>
-            <p class="hero-lede">Cloud infrastructure engineer behind streaming platforms, Kubernetes application environments, real-time event pipelines, and GPU-backed AI services.</p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
-              <a class="button button-quiet" href="/christopher-loumeau-resume.pdf" download>Download résumé <span aria-hidden="true">↘</span></a>
+            <h1>Christopher Loumeau’s<br /><em>Engineering Portfolio.</em></h1>
+          </div>
+          <div class="hero-profile">
+            <figure class="headshot-frame reveal">
+              <img src="/christopher-loumeau-headshot.jpeg" alt="Christopher Loumeau" width="499" height="499" />
+              <figcaption><span>Cloud Infrastructure Engineer</span><small>New York, NY</small></figcaption>
+            </figure>
+            <div class="hero-copy reveal">
+              <p class="hero-kicker">BUILDING PRODUCTION PLATFORMS AT SCALE</p>
+              <h2>From edge delivery<br />to <em>AI inference.</em></h2>
+              <p class="hero-lede">Cloud infrastructure engineer behind streaming platforms, Kubernetes application environments, real-time event pipelines, and GPU-backed AI services.</p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+                <a class="button button-quiet" href="/christopher-loumeau-resume.pdf" download>Download Resume <span aria-hidden="true">↘</span></a>
+              </div>
             </div>
           </div>
-          <aside class="terminal-card reveal" aria-label="Current engineering focus">
-            <div class="terminal-top"><span></span><span></span><span></span><small>current_focus.yaml</small></div>
-            <pre><code><span class="dim">engineer:</span> Christopher Loumeau
-<span class="dim">focus:</span>
-  - Streaming infrastructure
-  - Kubernetes &amp; GitOps
-  - Real-time data platforms
-  - Self-hosted AI inference
-<span class="dim">principle:</span> <span class="accent">ship it reliably</span></code></pre>
-            <div class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          </aside>
         </div>
         <div class="ticker" aria-hidden="true"><div>KUBERNETES <b>✦</b> ARGO CD <b>✦</b> KAFKA <b>✦</b> VLLM <b>✦</b> FASTAPI <b>✦</b> OBSERVABILITY <b>✦</b> KUBERNETES <b>✦</b> ARGO CD <b>✦</b> KAFKA <b>✦</b></div></div>
       </section>
 
       <section class="section shell" id="work">
-        <div class="section-heading reveal">
+        <div class="section-heading work-heading reveal">
           <div><p class="eyebrow">Selected work</p><h2>Infrastructure<br />that ships.</h2></div>
-          <p>Production systems I helped design, deploy, operate, and evolve across streaming media and financial technology.</p>
+          <p>A closer look at my work across streaming media and financial technology—from global delivery and observability to real-time data and AI.</p>
         </div>
         <div class="project-grid">
           <article class="project project-featured reveal">
@@ -105,11 +104,25 @@
           <p>Small, focused software that turns an everyday problem into a fast, dependable system.</p>
         </div>
         <article class="project project-featured reveal">
-          <div class="project-visual lomo-visual" aria-hidden="true">
+          <div class="project-visual resy-visual" aria-hidden="true">
             <span class="visual-label">05 / RUST AUTOMATION</span>
-            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="core">RESY</div>
-            <div class="metric metric-a"><small>CONNECTION</small><strong>PRE-WARMED</strong></div>
-            <div class="metric metric-b"><small>EXECUTION</small><strong>ON TIME</strong></div>
+            <div class="reservation-app">
+              <div class="reservation-header"><span>LOMOS / HUNGRY</span><small>NYC · 4 GUESTS</small></div>
+              <div class="restaurant-row">
+                <div class="restaurant-mark"><span></span><i></i></div>
+                <div><small>WEST VILLAGE · ITALIAN</small><h3>Friday night dinner</h3><p>Searching the moment reservations open.</p></div>
+                <span class="live-indicator">LIVE</span>
+              </div>
+              <div class="date-strip"><span>THU<small>15</small></span><span>FRI<small>16</small></span><span class="active">SAT<small>17</small></span><span>SUN<small>18</small></span><span>MON<small>19</small></span></div>
+              <div class="time-slots"><span>6:30 PM</span><span class="selected">7:00 PM</span><span>7:30 PM</span></div>
+            </div>
+            <div class="booking-card">
+              <div class="booking-top"><span>RESERVATION</span><strong>CONFIRMED</strong></div>
+              <p>SATURDAY · OCT 17</p>
+              <div class="booking-details"><div><small>PARTY</small><b>4 guests</b></div><div><small>TIME</small><b>7:00 PM</b></div></div>
+              <div class="booking-status"><i></i> Booked at release</div>
+            </div>
+            <div class="reservation-time"><small>RELEASE TARGET</small><strong>09:00:00</strong></div>
           </div>
           <div class="project-copy"><p class="project-number">05</p><div><h3>Reservation bot</h3><p>A Dockerized Rust application configured to target hard-to-get restaurant reservations at release time. It pre-warms connections, schedules attempts by priority, runs concurrent booking tasks, and supports dry-run and test modes for safe validation.</p><ul class="tags"><li>Rust</li><li>Tokio</li><li>HTTP/2</li><li>Docker</li><li>Concurrent systems</li></ul></div></div>
         </article>
@@ -130,8 +143,16 @@
       <section class="about section shell" id="about">
         <div class="about-statement reveal"><p class="eyebrow">About me</p><p class="statement">I work where <em>software</em>, <em>infrastructure</em>, and <em>AI</em> meet—making complex systems feel simple for the people who build on them.</p></div>
         <div class="about-grid reveal">
-          <div><p>I’m a New York–based cloud infrastructure engineer with a computer science background from Villanova University. I care about clear systems, useful automation, and the small operational details that separate a demo from a durable product.</p><p>My toolkit spans Python, Rust, Node.js, Bash, FastAPI, Dask, Pydantic, Prefect, PostgreSQL, Databricks, Kafka, ClickHouse, Iceberg, Polaris, Trino, Redis, Argo CD, GitHub Actions, Terraform, OpenTofu, Crossplane, Docker, Kubernetes, Akamai, Fastly, AWS, Azure, Datadog, Prometheus, Grafana, CUDA, NVIDIA GPU Operator, Qdrant, LangGraph, and vLLM.</p></div>
+          <div><p>I’m a New York–based cloud infrastructure engineer with a computer science background from Villanova University. I care about clear systems, useful automation, and the small operational details that separate a demo from a durable product.</p></div>
           <div class="cert-card"><span>AWS</span><strong>Certified Developer</strong><small>Associate</small></div>
+        </div>
+        <div class="skills-grid reveal" aria-label="Technical skills">
+          <div class="skill-group"><p>01 / Backend</p><h3>Python · Rust · Node.js · Bash</h3><span>FastAPI · Dask · Pydantic · Prefect</span></div>
+          <div class="skill-group"><p>02 / Data</p><h3>PostgreSQL · Kafka · ClickHouse</h3><span>Databricks · Iceberg · Polaris · Trino · Redis</span></div>
+          <div class="skill-group"><p>03 / Platform</p><h3>Kubernetes · Docker · Argo CD</h3><span>Terraform · OpenTofu · Crossplane · GitHub Actions</span></div>
+          <div class="skill-group"><p>04 / Cloud &amp; Edge</p><h3>AWS · Azure</h3><span>Akamai · Fastly</span></div>
+          <div class="skill-group"><p>05 / Observability</p><h3>Prometheus · Grafana</h3><span>Datadog</span></div>
+          <div class="skill-group"><p>06 / AI Infrastructure</p><h3>CUDA · vLLM · LangGraph</h3><span>NVIDIA GPU Operator · Qdrant</span></div>
         </div>
       </section>
 
@@ -142,7 +163,7 @@
           <div class="contact-actions">
             <a class="button button-primary" href="mailto:cloumeau@gmail.com">Email me <span aria-hidden="true">↗</span></a>
             <a class="button button-quiet" href="https://www.linkedin.com/in/christopher-loumeau-7561a5151" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-            <a class="button button-quiet" href="/christopher-loumeau-resume.pdf" download>Résumé <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="/christopher-loumeau-resume.pdf" download>Resume <span aria-hidden="true">↓</span></a>
           </div>
         </div>
       </section>
