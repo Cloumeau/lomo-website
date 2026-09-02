@@ -18,3 +18,14 @@ docker run --rm -p 8080:8080 lomo-website
 ```
 
 The container runs as an unprivileged user and listens on port `8080`.
+
+## Deploy to Firebase Hosting
+
+```bash
+npx firebase-tools login
+npx firebase-tools use --add
+npx firebase-tools deploy --only hosting
+```
+
+The Firebase configuration publishes the static website assets while excluding
+the repository's Docker and development files.
