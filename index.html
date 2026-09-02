@@ -11,6 +11,7 @@
     <title>Christopher Loumeau — Cloud Infrastructure Engineer</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/mobile.css" />
     <script defer src="/script.js"></script>
   </head>
   <body>
@@ -20,11 +21,22 @@
         <a class="wordmark" href="#top" aria-label="Christopher Loumeau, home">CL<span>.</span></a>
         <div class="nav-links">
           <a href="#work">Work</a>
+          <a href="#personal-work">Personal</a>
           <a href="#experience">Experience</a>
           <a href="#about">About</a>
         </div>
         <a class="nav-cta" href="mailto:cloumeau@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation">
+          <span></span><span></span>
+        </button>
       </nav>
+      <div class="mobile-menu" id="mobile-menu" hidden>
+        <a href="#work">Work</a>
+        <a href="#personal-work">Personal</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="mailto:cloumeau@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a>
+      </div>
     </header>
 
     <main id="main">
